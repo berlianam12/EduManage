@@ -1,0 +1,27 @@
+9
+5.00
+
+// view 1
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Nama</th>
+      <th scope="col">NIM</th>
+      <th scope="col">Jurusan</th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php foreach($data['mhs'] as $mhs) : ?>
+    <tr>
+      <th><?= $mhs['id']; ?></th>
+      <td><?= $mhs['nama']; ?></td>
+      <td><?= $mhs['nim']; ?></td>
+      <td><?= $mhs['jurusan']; ?></td>
+    </tr>
+    <?php endforeach;?>
+  </tbody>
+</table>
+
+mgt uy
